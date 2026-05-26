@@ -1,0 +1,41 @@
+.dialog.settings-view .m1h-settings-box {
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid rgba(0, 229, 255, .35);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, .18);
+}
+
+.dialog.settings-view .m1h-settings-box h2 {
+  margin: 0 0 6px;
+  color: var(--m1h-accent, #00e5ff);
+  font-size: 17px;
+}
+
+.dialog.settings-view .m1h-settings-desc {
+  margin-bottom: 10px;
+  opacity: .75;
+  font-size: 12px;
+}
+
+.dialog.settings-view .m1h-option-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.dialog.settings-view .m1h-option-label {
+  flex: 1;
+}
+
+.dialog.settings-view .m1h-option-row select {
+  min-width: 150px;
+}
+
+.dialog.settings-view .m1h-settings-btn {
+  margin: 8px 6px 0 0;
+  padding: 6px 10px;
+  cursor: pointer;
+}

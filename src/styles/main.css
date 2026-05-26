@@ -1,0 +1,102 @@
+#m1h-menu {
+  position: fixed;
+  top: 72px;
+  right: 24px;
+  width: 320px;
+  z-index: 2147483647;
+  color: var(--m1h-text);
+  background:
+    radial-gradient(circle at 20% 0%, color-mix(in srgb, var(--m1h-accent) 22%, transparent), transparent 28%),
+    linear-gradient(160deg, var(--m1h-bg), rgba(0,0,0,.82));
+  border: 1px solid var(--m1h-border);
+  border-radius: 18px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.45), 0 0 22px color-mix(in srgb, var(--m1h-accent) 18%, transparent);
+  backdrop-filter: blur(14px);
+  font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif;
+  overflow: hidden;
+}
+
+#m1h-menu.m1h-hidden { display: none; }
+
+.m1h-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  border-bottom: 1px solid var(--m1h-border);
+}
+
+.m1h-title { font-size: 18px; font-weight: 900; }
+.m1h-sub { margin-top: 2px; font-size: 11px; color: var(--m1h-muted); }
+
+#m1h-close {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--m1h-border);
+  border-radius: 10px;
+  color: var(--m1h-text);
+  background: rgba(255,255,255,.06);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.m1h-section { padding: 12px 14px; }
+.m1h-section-title {
+  margin-bottom: 8px;
+  color: var(--m1h-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .9px;
+  font-weight: 800;
+}
+
+.m1h-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.m1h-row input { accent-color: var(--m1h-accent); }
+
+.dialog.settings-view .m1h-hax-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.16);
+}
+
+.dialog.settings-view .m1h-hax-section h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #80ecff;
+}
+
+.dialog.settings-view .m1h-hax-sub {
+  margin-bottom: 8px;
+  opacity: .75;
+  font-size: 12px;
+}
+
+.dialog.settings-view .m1h-hax-toggle {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.dialog.settings-view .m1h-hax-toggle small {
+  display: block;
+  margin-left: 22px;
+  opacity: .68;
+  font-size: 11px;
+}
+
+.dialog.settings-view .m1h-hax-select {
+  margin: 8px 0;
+}
+
+.dialog.settings-view .m1h-hax-select select {
+  margin-left: 8px;
+}
